@@ -12,11 +12,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
+        <div>Test</div>
       </main>
 
       <footer className={styles.footer}>
-        
+        <a>auau</a>
       </footer>
     </div>
   )
