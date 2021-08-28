@@ -16,7 +16,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a>auau</a>
+        <a>auauau</a>
       </footer>
     </div>
   )
