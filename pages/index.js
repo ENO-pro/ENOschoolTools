@@ -1,8 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import React from 'react'
-import { signIn, signOut, useSession } from 'next-auth/client'
+//import Image from 'next/image';
+import Header from 'next/head'
+// import styles from '../styles/Home.module.css'
+import React, {Component} from 'react'
+//import { connect } from 'react-redux';
+//import Router from 'next/router';
+//import firebase from "firebase";
+import Account from '../components/account'
+
 
 
 export default function Home() {
@@ -10,15 +14,16 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
+      <Header>
         <title>Page title</title>
         <meta name="description" content="descrive site here" />
         <link rel="icon" href="/" />
-      </Head>
+      </Header>
 
       <main className={styles.main}>
         <div>
-          <>
+          <Account onLogined={this.logined} onLogouted={this.logouted} />
+          {/* <>
             {!session && <>
               Not signed in <br/>
               <button onClick={signIn}>Sign in</button>
@@ -27,7 +32,7 @@ export default function Home() {
               Signed in as {session.user.email} <br/>
               <button onClick={signOut}>Sign out</button>
             </>}
-          </>
+          </> */}
         </div>
       </main>
 
