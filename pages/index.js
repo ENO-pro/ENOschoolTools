@@ -23,6 +23,7 @@ export default function Home() {
       <main className={styles.main}>
         <div>
           <Account onLogined={this.logined} onLogouted={this.logouted} />
+          {/* Next-authのやつ↓ */}
           {/* <>
             {!session && <>
               Not signed in <br/>
