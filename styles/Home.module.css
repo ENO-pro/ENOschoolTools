@@ -1,26 +1,123 @@
-.heading {
-  font-size: 30px;
+
+
+.header {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px -6px rgba(119, 117, 117, 0.137);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px 20px 40px;
+}
+
+.header-logo {
+  font-size: 20px;
   font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: .05em;
 }
 
-.heading2 {
-  font-size: 24px;
-  font-weight: bold;
-
-  margin-top: 20px;
+.header-logo a {
+  color: #333;
+  text-decoration: none;
 }
 
-.md10 {
-  margin-top: 10px;
+.username {
+  font-size: 20px;
 }
 
-
-.inputArea {
-
-  margin-top: 20px;
-
+.card {
+  position: relative; z-index: 0;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.todoInputField {
-    margin-right: 5px;
-  }
+.card-item {
+  position: relative; z-index: 2;
+  background-color: #fff;
+  width: 300px;
+  margin-right: 1.58730%;
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;  
+}
+
+.card-img {
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.card-content {
+  padding: 0px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-link-container a {
+  display: block;
+  background-color: #fff;
+  transition: background 0.4s;
+  border-radius: 8px;
+}
+
+.card-link-container a:hover {
+  background: #ccc;
+}
+
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #000000;
+}
+
+.back{
+  position: absolute; z-index:1;
+  background: url('/static/images/back.png') no-repeat;
+  right: 0;
+  bottom: 0;
+  background-attachment: fixed;
+  display: block;
+  height: 70%;
+  width: 40%;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #333;
+}
+
+.copyright {
+  font-size: 15px;
+  text-align: center;
+  color: #797979;
+}

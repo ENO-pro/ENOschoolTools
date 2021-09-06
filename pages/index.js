@@ -1,58 +1,68 @@
-//import Image from 'next/image';
-import Header from 'next/head'
-import styles from '../styles/Home.module.css'
-import React, {Component, useState} from 'react'
-//import { connect } from 'react-redux';
-//import Router from 'next/router';
-//import firebase from "firebase";
-import Account from '../components/account'
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from '../styles/home.module.css'
 
-
-
-export default function Home() {
-  const [ name, password ] = useState([]);
-
-
-
+function page() {
   return (
-    <div>
-      <header>
-        <title>ろぐいん</title>
-      </header>
+    <div className={styles.container}>
+      <Head>
+        <title>だっしゅぼーど</title>
+      </Head>
 
-      <main>
-        <div>
-          <div>
-
-            <header>
-                
-                <div>KIT Auto Management</div>
-            </header>
-
-            <div className={styles.inputArea}>
-              <div>
-                <label>ユーザ名</label>
-                <input value={name}/>
-              </div>
-
-              <div>
-                <label>パスワード</label>
-                <input value={password}/>
-              </div>
-
-              <div>
-                <button>Login</button>
-              </div>
+      <main className={styles.main}>
+        <header className={styles.header}>
+          <div className={styles.container}>
+            <h1 >
+              <a>Kyutech Uoodle216(2021) on Proken</a>
+            </h1>
+            <div className={styles.username}>
+              logined by
             </div>
           </div>
-        
-          <footer>
-            <div>
-              <p>idp.idm.kyutech.ac.jp</p>
+
+          <div>
+            <div className={styles.card}>
+              <div>
+                <div>
+                  <p>共通</p>
+                </div>
+                <div>
+                  <div>
+                    <a>電気回路Ⅰ(2021):電気電子および電気宇宙【03クラス】:Q01:火曜日5時限木曜日4時限(1)</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.card}>
+                <div>
+                </div>
+                <div>
+                  <p>共通</p>
+                </div>
+                <div>
+                  <div>
+                    <a>電子回路Ⅰ 2021 （電気電子）</a>
+                  </div>
+                </div>
+              </div>
+
+              
+              
+
+              
+
             </div>
-          </footer>
-        </div>
+          </div>
+        </header>
+
+
       </main>
+
+      <footer classNameN={styles.footer}>
+        <a>auau</a>
+      </footer>
     </div>
   )
 }
+
+export default page
