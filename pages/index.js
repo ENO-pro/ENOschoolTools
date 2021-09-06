@@ -1,7 +1,7 @@
 //import Image from 'next/image';
 import Header from 'next/head'
-// import styles from '../styles/Home.module.css'
-import React, {Component} from 'react'
+import styles from '../styles/Home.module.css'
+import React, {Component, useState} from 'react'
 //import { connect } from 'react-redux';
 //import Router from 'next/router';
 //import firebase from "firebase";
@@ -10,36 +10,49 @@ import Account from '../components/account'
 
 
 export default function Home() {
-  const [ session, loading ] = useSession()
+  const [ name, password ] = useState([]);
+
+
 
   return (
-    <div className={styles.container}>
-      <Header>
-        <title>Page title</title>
-        <meta name="description" content="descrive site here" />
-        <link rel="icon" href="/" />
-      </Header>
+    <div>
+      <header>
+        <title>ろぐいん</title>
+      </header>
 
-      <main className={styles.main}>
+      <main>
         <div>
-          <Account onLogined={this.logined} onLogouted={this.logouted} />
-          {/* Next-authのやつ↓ */}
-          {/* <>
-            {!session && <>
-              Not signed in <br/>
-              <button onClick={signIn}>Sign in</button>
-            </>}
-            {session && <>
-              Signed in as {session.user.email} <br/>
-              <button onClick={signOut}>Sign out</button>
-            </>}
-          </> */}
+          <div>
+
+            <header>
+                
+                <div>KIT Auto Management</div>
+            </header>
+
+            <div className={styles.inputArea}>
+              <div>
+                <label>ユーザ名</label>
+                <input value={name}/>
+              </div>
+
+              <div>
+                <label>パスワード</label>
+                <input value={password}/>
+              </div>
+
+              <div>
+                <button>Login</button>
+              </div>
+            </div>
+          </div>
+        
+          <footer>
+            <div>
+              <p>idp.idm.kyutech.ac.jp</p>
+            </div>
+          </footer>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a>auauau</a>
-      </footer>
     </div>
   )
 }
