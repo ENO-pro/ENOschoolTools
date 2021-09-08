@@ -1,20 +1,21 @@
-import Header from 'next/head'
 import styles from '../styles/login.module.css'
-import React, {Component, useState} from 'react'
-import Link from 'next/link'
-
+import Head from "next/head";
+// import React, {useState} from 'react';
+import { GetStaticProps } from 'next';
+import Link from "next/link"
 
 
 export default function Home() {
-  const [ name, password ] = useState([]);
 
+  // const [ user ] = useState([]);
 
+  // const [ pwd ] = useState([]);
 
   return (
     <div>
-      <header>
+      <Head>
         <title>ろぐいん</title>
-      </header>
+      </Head>
 
       <main>
         <div>
@@ -28,16 +29,16 @@ export default function Home() {
             <div className={styles.inputArea}>
               <div>
                 <label>ユーザ名</label>
-                <input value={name}/>
+                <input/>
               </div>
 
               <div>
                 <label>パスワード</label>
-                <input value={password}/>
+                <input/>
               </div>
 
               <div>
-                <link href="/page"><a>Login</a></link>
+                <Link href="/home"><a>Login</a></Link>
               </div>
             </div>
           </div>
@@ -50,5 +51,11 @@ export default function Home() {
         </div>
       </main>
     </div>
-  )
+  );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+  };
+};
