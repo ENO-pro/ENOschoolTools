@@ -15,7 +15,7 @@
   padding: 0px 40px 20px 40px;
 }
 
-.header-logo {
+.headerLogo {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
@@ -23,7 +23,7 @@
   letter-spacing: .05em;
 }
 
-.header-logo a {
+.headerLogo a {
   color: #333;
   text-decoration: none;
 }
@@ -40,7 +40,7 @@
   flex-wrap: wrap;
 }
 
-.card-item {
+.cardItem {
   position: relative; z-index: 2;
   background-color: #fff;
   width: 300px;
@@ -50,7 +50,7 @@
   border: 1px solid #ccc;  
 }
 
-.card-img {
+.cardImg {
   max-width: 100%;
   margin: 0 auto;
   height: auto;
@@ -58,45 +58,45 @@
   align-items: center;
 }
 
-.card-content {
+.cardContent {
   padding: 0px;
 }
 
-.card-title {
+.cardTitle {
   font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
   color: #333;
 }
 
-.card-text {
+.cardText {
   color: #777;
   font-size: 14px;
   line-height: 1.5;
 }
 
-.card-link-container a {
+.cardLinkContainer a {
   display: block;
   background-color: #fff;
   transition: background 0.4s;
   border-radius: 8px;
 }
 
-.card-link-container a:hover {
+.cardLinkContainer a:hover {
   background: #ccc;
 }
 
-.card-link {
+.cardLink {
   text-align: center;
   border-top: 1px solid #eee;
   padding: 20px;
 }
-.card-link a {
+.cardLink a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   margin: 0 10px;
 }
-.card-link a:hover {
+.cardLink a:hover {
   color: #000000;
 }
 
