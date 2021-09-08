@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/home.module.css'
 import Link from "next/link"
+import { GetStaticProps } from 'next';
 
 function page() {
   return (
@@ -58,3 +59,9 @@ function page() {
 }
 
 export default page
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+  };
+};
